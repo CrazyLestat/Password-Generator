@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cae9400856.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+  <div class="container">
+    <div class="top">
+      <h1>Generate a <span>random password</span></h1>
+      <p>Never use an insecure password again.</p>
+      <label>Password length: <input id="input-el" onchange="get()" type="number" value="0" min="0" max="50" tooltip="Insert length"></label>
+      <button id="cta" onclick="generatePass()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3006 1.04627C11.7169 1.17749 12 1.56354 12 2.00001V7.00001L16 7.00001C16.3729 7.00001 16.7148 7.20747 16.887 7.5382C17.0592 7.86893 17.0331 8.268 16.8192 8.57347L9.81924 18.5735C9.56894 18.931 9.11564 19.085 8.69936 18.9537C8.28309 18.8225 8 18.4365 8 18L8 13H4C3.62713 13 3.28522 12.7926 3.11302 12.4618C2.94083 12.1311 2.96694 11.732 3.18077 11.4265L10.1808 1.42655C10.4311 1.06898 10.8844 0.915053 11.3006 1.04627Z" fill="white" />
+        </svg> Generate passwords</button>
+      <hr>
+    </div>
+    <div class="bottom">
+      <label><input type="text" id="button1" value="" class="password">
+      <button class="copy" onclick="copy1()"><i class="fas fa-copy"></i></button> </label>
+      <label><input type="text" id="button2" value="" class="password">
+      <button class="copy" onclick="copy2()"><i class="fas fa-copy"></i></button> </label>
+      <label><input type="text" id="button3" value="" class="password">
+      <button class="copy" onclick="copy3()"><i class="fas fa-copy"></i></button> </label>
+      <label><input type="text" id="button4" value="" class="password">
+      <button class="copy" onclick="copy4()"><i class="fas fa-copy"></i></button> </label>
+    </div>
+    <script src="index.js"></script>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

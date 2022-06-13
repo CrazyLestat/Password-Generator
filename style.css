@@ -1,0 +1,129 @@
+/* Document basic styling elements */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+/* Styling of the containers */
+.container {
+  width: 34.375rem;
+  height: 34.375rem;
+  background-color: #1f2937;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: auto;
+}
+.top {
+  padding-left: 3.25rem;
+  padding-top: 7.375rem;
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem; 
+}
+
+/* Elements styling */
+h1,
+span {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -2.5%;
+  font-weight: extra-bold;
+  margin: 0;
+}
+
+span {
+  color: #a78bfa;
+}
+
+p,
+label,
+input {
+  color: #d1d5db;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 10px;
+}
+
+#pass-label {
+  margin-right: 20px;
+}
+input {
+  background: transparent;
+  border: none;
+  width: 3rem;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+hr {
+  width: 27.875rem;
+  border: 1px solid #2f3e53;
+}
+
+/* Buttons styling */
+#cta {
+  background-color: #a78bfa;
+  border: 1px solid #a78bfa;
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1.5rem 0rem;
+}
+ /* Styling for the password fields */
+.password {
+    background: url(dots.svg) no-repeat center center; 
+    background-color: #273549;
+    color: #a78bfa;
+    border: none;
+    border-radius: 6px;
+    width: 13.2rem;
+    height: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+    
+    .copy {
+        background: transparent;
+        border: none;
+        padding-left: 10px;
+    }
+    
+    i {
+       color: #a78bfa;
+    }
+ 
+/* Styling for small screens */
+@media (max-width: 34.375rem) {
+    .container {
+        width: 90%;
+        height: auto;
+      text-align: centerr;
+    }
+  
+  hr {
+    width: 80%;
+  }
+}
+
